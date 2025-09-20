@@ -1,0 +1,258 @@
+/* Reset + Base --------------------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header -------------------------- */
+.site-header {
+  background-color: #f0f0f0; /* light gray */
+  padding: 20px 0;
+}
+
+.site-header .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+  color: #000;
+}
+
+.header-contact {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-contact a {
+  text-decoration: none;
+  color: #555;
+}
+
+.header-contact .btn.consult {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 25px;
+}
+
+/* Hero Section --------------------- */
+.hero {
+  padding: 50px 0;
+  background-color: #e8e8e5; /* light neutral tone */
+}
+
+.hero .hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #444;
+}
+
+.btn.primary {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.hero-images {
+  flex: 1 1 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.hero-images img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Dark services section ------------- */
+.dark-bg {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.dark-bg h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Content Section ---------------------- */
+.content-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.content-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  color: #555;
+}
+
+.btn.secondary {
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+/* Video Highlight Section ----------- */
+.video-highlight {
+  padding: 0;
+  margin: 60px 0;
+}
+
+.video-highlight .container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Practice Areas / Stats ----------- */
+.practice-areas {
+  background-color: #e8e8e5;
+  padding: 60px 0;
+}
+
+.practice-areas h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.stat {
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.stat span {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Footer ------------------------------- */
+.site-footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Responsive adjustments ----------- */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero-images {
+    grid-template-columns: 1fr;
+  }
+  .service-cards {
+    flex-direction: column;
+  }
+  .stats {
+    flex-direction: column;
+  }
+}
